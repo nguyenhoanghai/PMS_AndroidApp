@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TableLayout
+        android:stretchColumns="*"
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/lbResult"
+                android:layout_span="5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:text="Kết quả : "/>
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                >
+                <ImageButton
+                    android:id="@+id/imageButtonReload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/reload_72"
+                    android:layout_gravity="center"
+                    android:maxHeight="50dp"
+                    android:maxWidth="50dp"
+                    android:contentDescription="reload"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:layout_marginRight="10dp"
+                    />
+                <ImageButton
+                    android:id="@+id/imageButtonSetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/setting_128"
+                    android:layout_gravity="center"
+                    android:maxHeight="50dp"
+                    android:maxWidth="50dp"
+                    android:contentDescription="back"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:layout_marginRight="10dp"
+                    />
+            </LinearLayout>
+
+        </TableRow>
+    </TableLayout>
+
+
+</ScrollView>
