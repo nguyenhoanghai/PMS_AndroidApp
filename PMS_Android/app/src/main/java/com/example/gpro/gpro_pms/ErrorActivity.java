@@ -263,7 +263,7 @@ public class ErrorActivity extends AppCompatActivity {
                                             imageButton.setScaleType(ImageButton.ScaleType.FIT_START);
                                             imageButton.setAdjustViewBounds(true);
                                             final int finalIndex = index;
-                                            final String errCode = jsonObject.optString("Code");
+                                            final String errCode = jsonObject.optString("Id");
                                             imageButton.setOnClickListener(new View.OnClickListener() {
                                                 @Override
                                                 public void onClick(View v) {
